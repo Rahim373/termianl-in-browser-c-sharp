@@ -1,0 +1,17 @@
+version: '3'
+services:
+  server:
+    build: './server'
+    ports:
+      - 9001:80
+    container_name: terminal-server
+
+  client:
+    build: './client'
+    ports:
+      - 9000:3000
+    container_name: terminal-client
+    environment:
+      - REACT_APP_HUB_URL=http://localhost:9001
+    depends_on:
+      - server
