@@ -11,7 +11,7 @@ const MyTerminal = () => {
     useEffect(() => {
         const connection = new HubConnectionBuilder()
             //.withUrl(`${process.env.REACT_APP_HUB_URL}/cmdhub`)
-            .withUrl(`http://localhost:9001/cmdhub`)
+            .withUrl(`http://localhost:5179/cmdhub`)
             .withAutomaticReconnect({
                 nextRetryDelayInMilliseconds: (ctx) => {
                     return 5000;
