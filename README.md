@@ -3,6 +3,8 @@ Executing commands from the browser seems interesting 😂 right? This project s
 
 Note: This project is influenced by the [terminal-in-browser](https://github.com/foyzulkarim/terminal-in-browser) project from GitHub.
 
+![ezgif-2-0b379299a8](https://github.com/Rahim373/terminal-in-browser-c-sharp/assets/9987987/4ceefd8b-de77-43e2-8a6a-0265097bfd69)
+
 
 ## Technology Used
 * Front-End
