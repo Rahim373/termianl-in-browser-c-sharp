@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 services:
   server:
     build: './server'
@@ -12,6 +12,6 @@ services:
       - 9000:3000
     container_name: terminal-client
     environment:
-      - REACT_APP_HUB_URL=http://localhost:9001
+      - REACT_APP_HUB_URL=http://host.docker.internal:9001
     depends_on:
       - server

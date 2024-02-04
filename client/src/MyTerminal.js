@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Terminal from 'terminal-in-react';
 import { HubConnectionBuilder, LogLevel } from '@microsoft/signalr';
 
@@ -9,9 +9,9 @@ const MyTerminal = () => {
     const [connected, setConnected] = useState(false);
 
     useEffect(() => {
+        const hubUrl = process.env.REACT_APP_HUB_URL;
         const connection = new HubConnectionBuilder()
-            //.withUrl(`${process.env.REACT_APP_HUB_URL}/cmdhub`)
-            .withUrl(`http://localhost:5179/cmdhub`)
+            .withUrl(`${hubUrl}/cmdhub`)
             .withAutomaticReconnect({
                 nextRetryDelayInMilliseconds: (ctx) => {
                     return 5000;

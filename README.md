@@ -18,3 +18,9 @@ Note: This project is influenced by the [terminal-in-browser](https://github.com
 * **Communication**: SignalR is employed for its web socket communication capabilities, ensuring real-time data exchange and command execution feedback between the client and server.
 
 This project underscores the potential of combining modern web technologies to create interactive and real-time web applications, emphasizing the utility of SignalR in achieving seamless client-server communication.
+
+
+## Make it runnable
+1. Start docker
+1. Run ``` docker-compose up ``` command from the root of the project
+1. Go to http://localhost:9001 from the browser
